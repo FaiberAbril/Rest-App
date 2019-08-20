@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.mycompany.resp.api;
 
 import javax.xml.bind.annotation.XmlRootElement;
@@ -14,6 +10,7 @@ public class datos {
     private int points;
 
     public datos() {
+        
     }
 
     public String getName() {
@@ -30,6 +27,16 @@ public class datos {
 
     public void setPoints(int points) {
         this.points = points;
+    }
+
+    @Override
+    public String toString() {
+        return "datos{" + "name=" + name + ", points=" + points + '}';
+    }
+
+    @Override
+    public int hashCode() {
+        return super.hashCode(); //To change body of generated methods, choose Tools | Templates.
     }
     
     
